@@ -24,14 +24,28 @@ else:
     meadian = new_data[n//2]
 print("median",median)
 data = Counter(new_data)
-range1 = {"50-60":0,"60-70":0,"70-80":0}
+range1 = {"75-85":0,"85-95":0,"95-105":0,"105-115":0,"115-125":0,"125-135":0,"135-145":0,"145-155":0,"155-165":0,"165-175":0,}
 for height,occurance in data.items():
-    if 50<float(height)<60:
-        range1["50-60"]+=occurance
-    elif 60<float(height)<70:
-        range1["60-70"]+=occurance
-    elif 70<float(height)<80:
-        range1["70-80"]+=occurance
+    if 75<float(height)<85:
+        range1["75-85"]+=occurance
+    elif 85<float(height)<95:
+        range1["85-95"]+=occurance
+    elif 95<float(height)<105:
+        range1["95-105"]+=occurance
+    elif 105<float(height)<115:
+        range1["105-115"]+=occurance
+    elif 115<float(height)<125:
+        range1["115-125"]+=occurance
+    elif 125<float(height)<135:
+        range1["125-135"]+=occurance
+    elif 135<float(height)<145:
+        range1["135-145"]+=occurance
+    elif 145<float(height)<155:
+        range1["145-155"]+=occurance
+    elif 155<float(height)<165:
+        range1["155-165"]+=occurance
+    elif 165<float(height)<175:
+        range1["165-175"]+=occurance
 mode_range, mode_occurence = 0, 0
 for range, occurence in range1.items():
     if occurence > mode_occurence:
